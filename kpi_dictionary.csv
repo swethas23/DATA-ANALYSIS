@@ -1,0 +1,13 @@
+KPI Name,Formula / Definition,Grain,Filters,Owner,Refresh Cadence
+Total Orders,Count of unique order IDs,Order ID,All orders,Sales Manager,Daily
+Paid Orders,Count of orders with Paid status,Order ID,Payment status = Paid,Sales Manager,Daily
+Total Units Sold,Sum of valid quantities,Order,Valid quantity,Sales Manager,Daily
+Gross Revenue,Sum of unit price × quantity,Order,Valid sales records,Sales Manager,Daily
+Total Discount,Sum of gross revenue × discount percentage,Order,Valid discount values,Sales Manager,Daily
+Net Revenue,Gross revenue − total discount,Order,Valid sales records,Sales Manager,Daily
+Average Order Value,Net revenue ÷ eligible paid orders,Order,Paid orders with valid revenue,Sales Manager,Daily
+Pending Orders,Count of Pending orders,Order ID,Payment status = Pending,Sales Manager,Daily
+Failed Orders,Count of Failed orders,Order ID,Payment status = Failed,Sales Manager,Daily
+Refunded Orders,Count of Refunded orders,Order ID,Payment status = Refunded,Sales Manager,Daily
+Payment Success Rate,Paid orders ÷ (Paid + Failed + Refunded) × 100,Order ID,Pending orders excluded,Sales Manager,Daily
+Category-wise Net Revenue,Sum of net revenue for each category,Category,Valid sales records,Sales Manager,Daily

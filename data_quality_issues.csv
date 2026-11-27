@@ -1,0 +1,8 @@
+Quality Dimension,Issue,Number of Records,Result
+Completeness,Missing Values,4,NEEDS ATTENTION
+Uniqueness,Duplicate Order IDs,0,PASS
+Validity,Invalid Quantities,1,NEEDS ATTENTION
+Validity,Invalid Unit Prices,0,PASS
+Validity,Invalid Discounts,2,NEEDS ATTENTION
+Consistency,Invalid Payment Status,0,PASS
+Validity,Invalid Order Dates,3,NEEDS ATTENTION
